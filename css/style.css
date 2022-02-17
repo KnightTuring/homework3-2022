@@ -112,8 +112,8 @@ li a:focus {
 
 /* Requirements 6-10 here: */
 .intro {
-  background-image: url(../images/header.jpg);
   background-color: #707070;
+  background-image: url(../images/header.jpg);
   min-height: 400px;
   background-attachment: fixed;
   background-position: center;
@@ -183,8 +183,6 @@ img {
 
   }
 
-  
-
   nav li{
     margin-left: 5%;
     margin-right:0;
@@ -199,10 +197,8 @@ img {
   }
 
   .container {
-    grid-template-columns: 50px auto 500px auto 50px;
     grid-template-rows: 300px 300px 300px 300px;
-    /* Increasing row gap because the existing 30px one is not enough for larger screens */
-    row-gap: 50px;
+    grid-template-columns: 50px auto 500px auto 50px;
   }
 
   .about {
@@ -211,6 +207,7 @@ img {
 
   .about-image {
     grid-column: 2 / span 2;
+    overflow: hidden;
   }
 
   .method {
@@ -219,6 +216,7 @@ img {
 
   .method-image {
     grid-column: 2 / span 2;
+    overflow: hidden;
   }
 
   .clients {
@@ -227,6 +225,7 @@ img {
 
   .clients-image {
     grid-column: 3 / span 2;
+    overflow: hidden;
   }
 
   .contact {
@@ -237,6 +236,7 @@ img {
     grid-column: 3 / span 2;
     /* Setting z-index to -1 will enable the contact image to be behind the footer */
     z-index: -1;
+    overflow: hidden;
   }
 
 }
